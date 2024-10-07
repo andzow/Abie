@@ -1,6 +1,9 @@
 <template>
   <div>
-    <!-- <MainAbMain/> -->
+    <MainAbMain/>
+    <MainAbContent/>
+    <MainAbInfo/>
+    <MainAbAccordion/>
   </div>
 </template>
 

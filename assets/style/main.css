@@ -13,7 +13,6 @@
     scrollbar-gutter: stable;
   }
   body {
-    overflow-x: hidden;
     background: var(--back);
   }
   
@@ -122,23 +121,23 @@
   }
   
   ::selection {
-    background: var(--blue);
-    color: #fff;
+    background: var(--black);
+    color: var(--white);
   }
   
   ::-webkit-scrollbar {
     width: 4px;
-    background: var(--back);
+    background: var(--white);
   }
   ::-webkit-scrollbar-thumb {
-    background: var(--blue);
+    background: var(--black);
     border-radius: 5px;
   }
 input::placeholder {
-  color: var(--white);
+  color: var(--black);
 }
 textarea::placeholder {
-  color: var(--white);
+  color: var(--black);
 }
   
   input[type="number"]::-webkit-inner-spin-button,
