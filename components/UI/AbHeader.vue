@@ -55,17 +55,17 @@ const animationPreload = ():void => {
 
     setTimeout(() => {
         tilteActive.value = true
-    })
-    setTimeout(() => {
-        logoActive.value = true
     }, 1000)
     setTimeout(() => {
-        navActive.value = true
+        logoActive.value = true
     }, 2000)
+    setTimeout(() => {
+        navActive.value = true
+    }, 3000)
     setTimeout(() => {
         storage.preloadActive = false
         body.style.overflow = 'visible';
-    }, 3000)
+    }, 4000)
 }
 
 onMounted(() => {
