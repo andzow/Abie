@@ -5,7 +5,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="card" @click="$router.push('/faq-business' + item.route)">
+  <div class="card" @click="$router.push('/blog' + item.route)">
     <div class="card__content">
       <h2 class="card__title">
         {{ item.title }}
