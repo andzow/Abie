@@ -64,7 +64,7 @@ const filteredProjects = computed(() => {
 <template>
   <section class="main">
     <div class="main__content">
-      <!-- <div class="main__buttons">
+      <div class="main__buttons">
         <div class="main__buttons_first">
           <PortfolioAbButton
             v-for="(item, idx) in setPortfolioServiceFirst"
@@ -92,7 +92,7 @@ const filteredProjects = computed(() => {
             v-model="activeFilter"
           />
         </div>
-      </div> -->
+      </div>
       <div class="main__cards" v-auto-animate="{ duration: 300 }">
         <PortfolioAbCard
           v-for="item in filteredProjects"
