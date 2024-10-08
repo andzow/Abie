@@ -15,7 +15,7 @@ function redirectLink() {
 <template>
   <div class="card">
     <div class="card__content">
-      <div class="card__image">
+      <div class="card__image" @click="redirectLink">
         <img :src="item.imageSrc" />
       </div>
       <div class="card__menu">
