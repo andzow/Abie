@@ -11,6 +11,19 @@ definePageMeta({
     },
   ],
 });
+
+const { params } = useRoute();
+const findBlog = faqJson.find(el => el.route === "/" + params.id);
+
+useSeoMeta({
+  title: `${findBlog.title} | Abie`,
+  ogTitle: `${findBlog.info} | Abie`,
+  description:
+    "Добро пожаловать в блог ABIE! Здесь вы найдете актуальные рекомендации и инсайты по разработке веб-сайтов и дизайну. Следите за новыми трендами и получайте советы, которые помогут вашему бизнесу выделиться онлайн.",
+  ogDescription:
+    "Исследуйте мир веб-разработки с блогом ABIE! Мы предлагаем практические советы и актуальную информацию о современных подходах и трендах в создании сайтов под ключ.",
+  ogImage: "/Projects/colibri.webp",
+});
 </script>
 
 <template>
