@@ -4,21 +4,21 @@
         <svg width="29" height="42" class="header__logo" viewBox="0 0 29 42" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="header__path" :class="{'header__path_active': logoActive}" d="M1.62691e-05 41.5996L21.8855 0.744262L28.7634 6.14704L1.62691e-05 41.5996Z" fill="#BBB"/>
         </svg>
-        <h1 class="header__title" :class="{'header__title_active': tilteActive}">абие</h1>
+        <h1 class="header__title" :class="{'header__title_active': tilteActive}" @click="goHome">абие</h1>
         <nav class="header__nav" :class="{'header__nav_active': navActive}">
-            <NuxtLink to="/" class="header__item">
+            <NuxtLink to="/agency" class="header__item">
                 <UIAbLink>агенство</UIAbLink>
             </NuxtLink>
-            <NuxtLink to="/" class="header__item">
+            <NuxtLink to="/projects" class="header__item">
                 <UIAbLink>проекты</UIAbLink>
             </NuxtLink>
-            <NuxtLink to="/" class="header__item">
+            <NuxtLink to="/services" class="header__item">
                 <UIAbLink>услуги</UIAbLink>
             </NuxtLink>
-            <NuxtLink to="/" class="header__item">
+            <NuxtLink to="/contacts" class="header__item">
                 <UIAbLink>контакты</UIAbLink>
             </NuxtLink>
-            <NuxtLink to="/" class="header__item">
+            <NuxtLink to="/blog" class="header__item">
                 <UIAbLink>блог</UIAbLink>
             </NuxtLink>
         </nav>
@@ -28,6 +28,7 @@
 
 <script setup lang="ts">
 const storage = useStorageStore()
+const router = useRouter()
 
 let header:HTMLElement | null = null
 let lastScrollY:number = 0;
@@ -66,6 +67,10 @@ const animationPreload = ():void => {
         storage.preloadActive = false
         body.style.overflow = 'visible';
     }, 4000)
+}
+
+const goHome = ():void => {
+    router.push('/')
 }
 
 onMounted(() => {
@@ -120,6 +125,11 @@ onUnmounted(() => {
         font-size: 80px;
         color: #BBBBBB;
         transition: all .3s ease;
+        cursor: pointer;
+    }
+
+    &__title:hover {
+        transform: scale(1.03);
     }
 
     &__title_active {

@@ -22,7 +22,7 @@ export default {
 
 .link__line::before {
     content: '';
-    bottom: -5px;
+    bottom: -2px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;

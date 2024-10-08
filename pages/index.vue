@@ -3,7 +3,7 @@
     <MainAbMain/>
     <MainAbContent/>
     <MainAbInfo/>
-    <MainAbAccordion/>
+    <UIAbAccordion/>
   </div>
 </template>
 
