@@ -27,4 +27,16 @@ const arrFaq = faqJson;
     row-gap: 20px;
   }
 }
+@media screen and (max-width: 1240px) {
+  .faq {
+    padding-top: 200px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .faq {
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
 </style>

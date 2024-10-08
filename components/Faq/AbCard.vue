@@ -5,7 +5,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="card">
+  <div class="card" @click="$router.push('/blog' + item.route)">
     <div class="card__content">
       <h2 class="card__title">
         {{ item.title }}
@@ -53,6 +53,39 @@ const props = defineProps({
   }
   &:hover {
     background: #f5f5f5;
+  }
+}
+@media screen and (max-width: 1660px) {
+  .card {
+    &__title {
+      font-size: 38px;
+      margin-bottom: 50px;
+    }
+    &__li {
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .card {
+    &__title {
+      font-size: 38px;
+      margin-bottom: 50px;
+    }
+    &__li {
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (max-width: 1030px) {
+  .card {
+    &__title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    &__li {
+      font-size: 18px;
+    }
   }
 }
 </style>
