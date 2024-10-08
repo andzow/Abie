@@ -112,8 +112,8 @@ const getArrFaq = computed(() => {
         &::before {
           position: absolute;
           content: "";
-          transform: translateY(-50%) translateX(-15px);
-          top: 50%;
+          transform: translateY(100%) translateX(-15px);
+          top: 2px;
           width: 5px;
           height: 5px;
           background: #000;
@@ -123,6 +123,73 @@ const getArrFaq = computed(() => {
     }
     &:last-child {
       margin-bottom: 0px;
+    }
+  }
+}
+@media screen and (max-width: 1500px) {
+  .main {
+    &__header {
+      margin-bottom: 200px;
+    }
+    &__title {
+      font-size: 68px;
+      max-width: 1054px;
+    }
+    &__des {
+      font-size: 20px;
+    }
+    &__item {
+      margin-bottom: 65px;
+      max-width: 800px;
+      &_title {
+        font-size: 28px;
+        margin-bottom: 35px;
+      }
+      &_des {
+        font-size: 20px;
+      }
+      &_ul {
+        font-size: 20px;
+        font-weight: 400;
+        color: #000;
+        li {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1240px) {
+  .main {
+    padding-top: 200px;
+    &__header {
+      margin-bottom: 80px;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .main {
+    &__header {
+      flex-direction: column;
+      gap: 30px;
+    }
+    &__des {
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+}
+@media screen and (max-width: 710px) {
+  .main {
+    &__title {
+      font-size: 48px;
+    }
+  }
+}
+@media screen and (max-width: 510px) {
+  .main {
+    &__title {
+      font-size: 38px;
     }
   }
 }

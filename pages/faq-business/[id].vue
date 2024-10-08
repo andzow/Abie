@@ -6,7 +6,7 @@ definePageMeta({
     function (val) {
       const arrFaq = faqJson.find(el => el.route === "/" + val.params.id);
       if (!arrFaq) {
-        return navigateTo("/");
+        return navigateTo("/404/not-found");
       }
     },
   ],
