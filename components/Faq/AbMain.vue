@@ -1,9 +1,13 @@
-<script setup></script>
+<script setup>
+import faqJson from "~/public/json/faq-business.json";
+
+const arrFaq = faqJson;
+</script>
 
 <template>
   <section class="faq">
     <div class="faq__content">
-      <FaqAbCard />
+      <FaqAbCard v-for="(item, idx) in arrFaq" :key="idx" :item="item" />
     </div>
   </section>
 </template>

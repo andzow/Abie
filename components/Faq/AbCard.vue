@@ -1,13 +1,19 @@
-<script setup></script>
+<script setup>
+const props = defineProps({
+  item: Object,
+});
+</script>
 
 <template>
   <div class="card">
     <div class="card__content">
       <h2 class="card__title">
-        Почему важно создать уникальный бренд для интернет-магазина?
+        {{ item.title }}
       </h2>
       <ul class="card__ul">
-        <li class="card__li">уникальный бренд,</li>
+        <li class="card__li" v-for="(li, idx) in item.list" :key="idx">
+          {{ li }}
+        </li>
       </ul>
     </div>
   </div>
@@ -27,8 +33,11 @@
     font-weight: 400;
     margin-bottom: 70px;
   }
-  &__ul {
+  &__li {
     position: relative;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
     margin-left: 10px;
     transform: translateX(15px);
     &::before {
@@ -41,11 +50,6 @@
       background: #000;
       border-radius: 100%;
     }
-  }
-  &__li {
-    font-size: 24px;
-    font-weight: 400;
-    color: #000;
   }
   &:hover {
     background: #f5f5f5;
