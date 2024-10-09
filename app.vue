@@ -2,7 +2,9 @@
   <div>
     <!-- <UIAbPreload /> -->
     <UIAbHeader />
-    <NuxtPage />
+    <main>
+      <NuxtPage />
+    </main>
     <UIAbFooter />
   </div>
 </template>
