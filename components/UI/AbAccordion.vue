@@ -181,7 +181,7 @@ onMounted(():void => {
 
     @media (max-width: 600px) {
         &__title {
-            font-size: 50px;
+            font-size: 41px;
         }
 
         &__svg {

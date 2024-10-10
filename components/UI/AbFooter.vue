@@ -62,6 +62,7 @@
 
     &__logo_mobile {
         display: none;
+        margin-right: 10px;
     }
 
     &__position {

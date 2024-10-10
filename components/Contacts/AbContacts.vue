@@ -3,8 +3,8 @@
         <div class="contacts__container">
             <div class="contacts__position">
                 <h2 class="contacts__title">Сделаем мир красивее вместе?</h2>
-                <video class="contacts__video" type="video/mp4" autoplay muted loop preload="metadata" playsinline>
-                    <source src="/Contacts/landing.mp4" />
+                <video class="contacts__video" type="video/mp4" autoplay muted loop playsinline>
+                    <source :src="'/Contacts/contact.mp4'" />
                 </video>
             </div>
             <div class="contacts__position contacts__position_steps">
