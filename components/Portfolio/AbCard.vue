@@ -8,7 +8,7 @@ function redirectLink() {
     return;
   }
   const router = useRouter();
-  window.open(props.item?.link, "_blank");
+  router.push("/projects/" + props.item?.route.replace(/^\//, ""));
 }
 </script>
 
