@@ -50,6 +50,10 @@
         align-items: flex-end;
     }
 
+    &__item:nth-child(1) {
+        margin-right: 20px;
+    }
+
     &__title {
         margin-top: 25px;
         text-align: right;
@@ -111,6 +115,33 @@
 
     &__video:hover &__source {
         transform: scale(1.1);
+    }
+
+    @media (max-width: 700px) {
+        &__position {
+            flex-direction: column;
+        }
+
+        &__item:nth-child(1) {
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+
+        &__option {
+            top: 20px;
+            right: 20px;
+        }
+
+        &__option_kupala {
+            top: auto;
+            bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .content {
+        margin-top: 20px;
     }
 }
 </style>

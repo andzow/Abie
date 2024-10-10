@@ -7,7 +7,7 @@
             <div class="team__grid">
                 <div class="team__item" v-for="person in teamData" :key="person.name">
                     <div class="team__image">
-                        <img class="team__svg" :src=person.image alt="">
+                        <img class="team__img" :src=person.image alt="">
                     </div>
                     <h4 class="team__name">{{ person.title }}</h4>
                     <p class="team__description">{{ person.text }}</p>
@@ -81,12 +81,6 @@ let strokeActive: Ref<boolean> = ref(false)
         max-width: 320px;
         font-size: 24px;
         text-align: right;
-    }
-
-    &__svg {
-        stroke-dasharray: 751.2; /* Периметр окружности */
-        stroke-dashoffset: 751.2; /* Полное смещение */
-        transition: stroke-dashoffset 2s ease;
     }
 }
 </style>

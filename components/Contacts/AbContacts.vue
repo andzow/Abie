@@ -78,5 +78,27 @@
         flex-direction: column;
         align-items: flex-end;
     }
+
+    @media (max-width: 1140px) {
+        &__position {
+            flex-direction: column;
+        }
+        &__video {
+            max-width: none;
+            width: 100%;
+        }
+    }
+    @media(max-width: 900px) {
+        &__title {
+            font-size: 50px;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .contacts {
+        padding-top: 250px;
+    }
 }
 </style>

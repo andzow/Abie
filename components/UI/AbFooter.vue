@@ -1,8 +1,11 @@
 <template>
     <footer class="footer">
         <div class="footer__container">
-            <img src="/UI/logo.svg" alt="">
-            <h2 class="footer__title">абие</h2>
+            <img class="footer__logo" src="/UI/logo.svg" alt="">
+            <div class="footer__position">
+                <img class="footer__logo_mobile" src="/UI/logo.svg" alt="">
+                <h2 class="footer__title">абие</h2>
+            </div>
             <div class="footer__buttons">
                 <button class="footer__btn footer__btn_white">ВК</button>
                 <button class="footer__btn footer__btn_white">Написать в Telegram</button>
@@ -55,6 +58,42 @@
     &__btn_white:hover {
         background: var(--black);
         color: var(--white);
+    }
+
+    &__logo_mobile {
+        display: none;
+    }
+
+    &__position {
+        display: flex;
+        align-items: center;
+    }
+
+    @media (max-width: 1140px) {
+        &__logo_mobile {
+            display: block;
+        }
+
+        &__logo {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+        }
+
+        &__btn:nth-child(2) {
+            border: 1px solid var(--black);
+            border-top: none;
+        }
     }
 }
 </style>

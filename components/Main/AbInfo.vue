@@ -75,5 +75,26 @@ const storage = useStorageStore()
         font-size: 24px;
         text-align: right;
     }
+
+    @media(max-width: 1150px) {
+        &__title {
+            margin-right: 0 !important;
+        }
+        &__description {
+            margin-right: 0 !important;
+        }
+    }
+
+    @media(max-width: 700px) {
+        &__option {
+            top: 20px;
+            right: 20px;
+        }
+    }
+}
+@media(max-width: 700px) {
+    .info {
+        margin-top: 20px;
+    }
 }
 </style>

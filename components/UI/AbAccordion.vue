@@ -162,6 +162,38 @@ onMounted(():void => {
     &__svg_active {
         transform: rotate(65deg);
     }
+
+    @media (max-width: 1400px) {
+        &__title {
+            font-size: 60px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        &__symbol {
+            display: none;
+        }
+
+        &__position {
+            margin-left: 0 !important;
+        }
+    }
+
+    @media (max-width: 600px) {
+        &__title {
+            font-size: 50px;
+        }
+
+        &__svg {
+            width: 25px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .accordion {
+        margin-top: 100px;
+    }
 }
 
 .v-enter-active,
