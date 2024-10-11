@@ -12,6 +12,7 @@
   "dependencies": {
     "@formkit/auto-animate": "^0.8.2",
     "@pinia/nuxt": "^0.5.5",
+    "aos": "^2.3.4",
     "nuxt": "^3.12.4",
     "pinia": "^2.2.4",
     "sass": "^1.77.8",

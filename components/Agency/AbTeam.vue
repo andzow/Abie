@@ -5,7 +5,7 @@
                 <h3 class="team__title" :style="{ marginRight: `${storage.indentRight}px` }">наша команда</h3>
             </div>
             <div class="team__grid">
-                <div class="team__item" v-for="person in teamData" :key="person.name">
+                <div class="team__item" v-for="person in teamData" :key="person.name" data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="-200">
                     <div class="team__image">
                         <img class="team__img" :src=person.image alt="">
                     </div>

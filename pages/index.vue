@@ -1,7 +1,7 @@
 <template>
   <div>
     <MainAbMain/>
-    <MainAbContent/>
+    <MainAbContent />
     <MainAbInfo/>
     <UIAbAccordion/>
   </div>

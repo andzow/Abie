@@ -2,7 +2,7 @@
     <section class="content">
         <div class="content__container">
             <div class="content__position">
-                <div class="content__item">
+                <div class="content__item" data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="-500">
                     <div class="content__image">
                         <img class="content__img" src="/Main/colibri.webp" alt="">
                         <p class="content__option">Tilda</p>
@@ -10,7 +10,7 @@
                     <h2 class="content__title">Kolibri flowers</h2>
                     <p class="content__description">Tilda, интернет-магазин</p>
                 </div>
-                <div class="content__item">
+                <div class="content__item" data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="-200">
                     <div class="content__video">
                         <video class="content__source" type="video/mp4" autoplay muted loop preload="metadata" playsinline>
                             <source src="/Main/kupala.mp4" />

@@ -1,5 +1,5 @@
 <template>
-    <section class="contacts">
+    <section class="contacts" data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="-200">
         <div class="contacts__container">
             <div class="contacts__position">
                 <h2 class="contacts__title">Сделаем мир красивее вместе?</h2>

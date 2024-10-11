@@ -95,6 +95,7 @@ const filteredProjects = computed(() => {
       </div>
       <div class="main__cards" v-auto-animate="{ duration: 300 }">
         <PortfolioAbCard
+          data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="-200"
           v-for="item in filteredProjects"
           :key="item.name"
           :item="item"

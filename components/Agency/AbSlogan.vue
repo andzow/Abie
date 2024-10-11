@@ -1,5 +1,5 @@
 <template>
-    <section class="slogan">
+    <section class="slogan" data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="-200">
         <div class="slogan__container">
             <div class="slogan__position">
                 <p class="slogan__info" :style="{ marginRight: `${storage.indentRight}px` }">( —от церковно-славянский) тотчас, сразу, немедля</p>

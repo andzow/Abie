@@ -1,5 +1,5 @@
 <template>
-    <section class="info">
+    <section class="info" data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="-200">
         <div class="info__container">
             <div class="info__position">
                 <div class="info__image">

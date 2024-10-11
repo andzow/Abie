@@ -1,5 +1,5 @@
 <template>
-    <section class="accordion">
+    <section class="accordion" data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="-200">
         <div class="accordion__container">
             <div class="accordion__position" :style="{ marginLeft: `${storage.indentLeft}px` }">
                 <div class="accordion__content" v-for="(item, index) in infoData" :key="index">

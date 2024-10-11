@@ -1,7 +1,7 @@
 <template>
     <section class="additionally">
         <div class="additionally__container">
-            <div class="additionally__position">
+            <div class="additionally__position" data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="-200">
                 <h3 class="additionally__text">Видим, слышим, говорим и чувствуем, а главное – передаем это проектами.</h3>
                 <p class="additionally__info">Мы создаём магию уникальных решений и концепций для бизнеса, совмещаем креативные идеи и стратегическое мышление. </p>
             </div>

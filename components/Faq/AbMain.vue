@@ -7,7 +7,7 @@ const arrFaq = faqJson;
 <template>
   <section class="faq">
     <div class="faq__content">
-      <FaqAbCard v-for="(item, idx) in arrFaq" :key="idx" :item="item" />
+      <FaqAbCard v-for="(item, idx) in arrFaq" :key="idx" :item="item" data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="-200" />
     </div>
   </section>
 </template>
