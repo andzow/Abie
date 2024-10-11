@@ -39,5 +39,21 @@
         font-size: 80px;
         max-width: 920px;
     }
+
+    @media (max-width: 900px) {
+        &__text {
+            font-size: 50px;
+            margin-bottom: 60px;
+        }
+
+        &__position {
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .additionally {
+        padding-top: 100px;
+    }
 }
 </style>

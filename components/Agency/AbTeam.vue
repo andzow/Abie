@@ -72,6 +72,10 @@ let strokeActive: Ref<boolean> = ref(false)
         cursor: pointer;
     }
 
+    &__img {
+        width: 100%;
+    }
+
     &__name {
         font-size: 80px;
         margin-top: 20px;
@@ -81,6 +85,24 @@ let strokeActive: Ref<boolean> = ref(false)
         max-width: 320px;
         font-size: 24px;
         text-align: right;
+    }
+
+    @media (max-width: 1300px) {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 1000px) {
+        &__name {
+            font-size: 60px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }
 </style>
