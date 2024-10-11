@@ -7,7 +7,7 @@
             <div class="team__grid">
                 <div class="team__item" v-for="person in teamData" :key="person.name">
                     <div class="team__image">
-                        <img class="team__svg" :src=person.image alt="">
+                        <img class="team__img" :src=person.image alt="">
                     </div>
                     <h4 class="team__name">{{ person.title }}</h4>
                     <p class="team__description">{{ person.text }}</p>
@@ -72,6 +72,10 @@ let strokeActive: Ref<boolean> = ref(false)
         cursor: pointer;
     }
 
+    &__img {
+        width: 100%;
+    }
+
     &__name {
         font-size: 80px;
         margin-top: 20px;
@@ -83,10 +87,22 @@ let strokeActive: Ref<boolean> = ref(false)
         text-align: right;
     }
 
-    &__svg {
-        stroke-dasharray: 751.2; /* Периметр окружности */
-        stroke-dashoffset: 751.2; /* Полное смещение */
-        transition: stroke-dashoffset 2s ease;
+    @media (max-width: 1300px) {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 1000px) {
+        &__name {
+            font-size: 60px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }
 </style>

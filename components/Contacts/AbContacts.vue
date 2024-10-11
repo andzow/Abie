@@ -3,8 +3,8 @@
         <div class="contacts__container">
             <div class="contacts__position">
                 <h2 class="contacts__title">Сделаем мир красивее вместе?</h2>
-                <video class="contacts__video" type="video/mp4" autoplay muted loop preload="metadata" playsinline>
-                    <source src="/Contacts/landing.mp4" />
+                <video class="contacts__video" type="video/mp4" autoplay muted loop playsinline>
+                    <source :src="'/Contacts/contact.mp4'" />
                 </video>
             </div>
             <div class="contacts__position contacts__position_steps">
@@ -77,6 +77,28 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+    }
+
+    @media (max-width: 1140px) {
+        &__position {
+            flex-direction: column;
+        }
+        &__video {
+            max-width: none;
+            width: 100%;
+        }
+    }
+    @media(max-width: 900px) {
+        &__title {
+            font-size: 50px;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .contacts {
+        padding-top: 250px;
     }
 }
 </style>

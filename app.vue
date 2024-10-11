@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UIAbPreload />
+    <!-- <UIAbPreload /> -->
     <UIAbHeader />
     <main>
       <NuxtPage />
@@ -13,8 +13,5 @@
 onMounted((): void => {
   findElement();
   window.addEventListener("resize", findElement);
-});
-onUnmounted(() => {
-  window.removeEventListener("resize", findElement);
 });
 </script>

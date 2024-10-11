@@ -8,6 +8,7 @@
             <video class="main__video" type="video/mp4" autoplay muted loop preload="metadata" playsinline>
                 <source src="/Main/myStories.mp4" />
             </video>
+            <img class="main__logo" src="/Main/logo.svg" alt="">
             <p class="main__option">автоматизация бизнеса</p>
         </div>
         <div class="main__posotion">
@@ -52,8 +53,11 @@ const storage = useStorageStore()
         cursor: pointer;
     }
 
-    &__content:hover &__video {
-        transform: scale(1.06);
+    &__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     &__option {
@@ -81,6 +85,32 @@ const storage = useStorageStore()
         font-size: 24px;
         max-width: 485px;
         text-align: right;
+    }
+
+    @media (max-width: 1374px) {
+        &__title {
+            margin-right: 0 !important;
+        }
+        
+        &__description {
+            margin-right: 0 !important;
+        }
+    }
+
+    @media (max-width: 900px) {
+        &__option {
+            top: 20px;
+            right: 20px;
+        }
+
+        &__logo {
+            width: 200px;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .main {
+        padding-top: 250px;
     }
 }
 </style>

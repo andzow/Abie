@@ -37,7 +37,7 @@ onMounted(():void => {
         position: absolute;
         top: 0;
         right: -5%;
-        transform-origin: center center; /* Устанавливаем центр вращения */
+        transform-origin: center center;
         transform: rotate(-90deg);
         transition: transform 2s linear;
     }
@@ -68,5 +68,31 @@ onMounted(():void => {
         max-width: 1050px;
         margin-top: 100px;
     }
+    @media(max-width: 1400px) {
+        &__logo {
+            width: 25%;
+            top: 10%;
+            right: -5%;
+        }
+    }
+
+    @media(max-width: 1140px) {
+        &__logo {
+            width: 30%;
+        }
+    }
+    @media(max-width: 900px) {
+        &__text {
+            font-size: 50px;
+        }
+    }
+
 }
+
+@media(max-width: 900px) {
+    .slogan {
+        padding-top: 250px;
+    }
+}
+
 </style>
