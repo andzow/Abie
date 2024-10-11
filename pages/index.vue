@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<script>
+<script setup>
 useSeoMeta({
   title: "Главная страница ABIE – Создание сайтов, автоматизация бизнеса | ABIE",
   ogTitle: "ABIE - Ваш партнер в создании современных сайтов",
