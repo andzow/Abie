@@ -1,11 +1,11 @@
 [
   {
     "name": "My stories",
-    "link": "https://xn--80aqckmmfdf.xn--p1ai/",
+    "link": true,
     "des": "Интернет-магазин, админ-панель,<br> инеграция AMO SRM, Почта России и СДЕК",
     "imageSrc": "/Projects/mystories.webp",
     "type": "e-commerce",
-    "route": "/my-stories",
+    "route": false,
     "back-photo": "/Projects/Id/back-cupala.webp",
     "media-photo": "/Projects/Id/media-cupala.webp",
     "arrTask": [
@@ -55,7 +55,7 @@
   },
   {
     "name": "Купала",
-    "link": "https://xn--80aqckmmfdf.xn--p1ai/",
+    "link": true,
     "des": "йдентика, гайдбук, промо ролик,<br> полиграфия",
     "imageSrc": "/Projects/cupala.webp",
     "type": ["tilda", "branding", "analytics", "marketplaces", "packaging"],
@@ -109,11 +109,11 @@
   },
   {
     "name": "Kolibri flowers",
-    "link": "https://xn--80aqckmmfdf.xn--p1ai/",
+    "link": true,
     "des": "Tilda,<br>интернет-магазин",
     "imageSrc": "/Projects/colibri.webp",
     "type": ["tilda", "analytics", "marketplaces", "landing-page", "packaging"],
-    "route": "/kolibri",
+    "route": false,
     "back-photo": "/Projects/Id/back-cupala.webp",
     "media-photo": "/Projects/Id/media-cupala.webp",
     "arrTask": [
@@ -163,11 +163,11 @@
   },
   {
     "name": "Медолс",
-    "link": false,
+    "link": true,
     "des": "Сайт стоматологии,<br>соблюдение норм МИНЗДРАВА",
     "imageSrc": "/Projects/medols.webp",
     "type": ["dentistry", "printing"],
-    "route": "/medols",
+    "route": false,
     "back-photo": "/Projects/Id/back-cupala.webp",
     "media-photo": "/Projects/Id/media-cupala.webp",
     "arrTask": [
