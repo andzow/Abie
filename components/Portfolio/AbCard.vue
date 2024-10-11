@@ -4,10 +4,10 @@ const props = defineProps({
 });
 
 function redirectLink() {
-  if (!props.item?.link) {
-    return;
-  }
   const router = useRouter();
+  if (!props.item?.route) {
+    router.push("/404/not-found");
+  }
   router.push("/projects/" + props.item?.route.replace(/^\//, ""));
 }
 </script>
