@@ -27,7 +27,7 @@
                 <UIAbLink>блог</UIAbLink>
             </NuxtLink>
         </nav>
-        <div class="header__menu" :class="{'header__menu_active': menuActive}" @click="menuActive = !menuActive">
+        <div class="header__menu" :class="{'header__menu_active': menuActive, 'header__menu_preload': navActive}" @click="menuActive = !menuActive">
             <div class="header__line"></div>
             <div class="header__line header__line_last"></div>
         </div>
@@ -208,9 +208,17 @@ onUnmounted(() => {
         display: none;
         height: 40px;
         width: 40px;
-        border: 2px solid var(--black);
+        border: 2px solid #BBBBBB;
         position: relative;
         transition: all .3s ease;
+    }
+
+    &__menu_preload {
+        border: 2px solid var(--black);
+    }
+
+    &__menu_preload &__line {
+        background: var(--black);
     }
 
     &__menu_active {
@@ -233,7 +241,7 @@ onUnmounted(() => {
         
     &__line {
         position: absolute;
-        background: var(--black);
+        background: #BBBBBB;
         height: 2px;
         width: 16px;
         top: 50%;

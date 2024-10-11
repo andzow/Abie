@@ -60,5 +60,53 @@ const goHome = ():void => {
         right: 0;
         bottom: 0;
     }
+
+    @media (max-width: 1300px) {
+        &__img {
+            max-width: 600px;
+        }
+    }
+
+    @media (max-width: 1140px) {
+        &__text {
+            margin-right: 0 !important;
+        }
+
+        &__position {
+            align-items: flex-start;
+        }
+
+        &__btn {
+            margin-right: 0 !important;
+        }
+
+        &__img {
+            max-width: 500px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        &__img {
+            display: none;
+        }
+
+        &__position {
+            align-items: center;
+        }
+
+        &__btn {
+            padding: 10px 40px 10px 40px;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .error {
+        padding-top: 250px; 
+    }
 }
 </style>

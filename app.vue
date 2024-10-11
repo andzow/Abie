@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <UIAbPreload /> -->
+    <UIAbPreload />
     <UIAbHeader />
     <main>
       <NuxtPage />
