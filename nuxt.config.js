@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   css: ["~/assets/style/main.css"],
   plugins: ["~/plugins/v-auto-animate.js"],
   ssr: true,
+  build: {
+    transpile: ['vue-3-mask'],
+  },
   app: {
     head: {
       link: [
