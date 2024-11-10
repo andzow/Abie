@@ -4,7 +4,8 @@
     <UIAbHeader />
     <main>
       <NuxtPage />
-    </main>
+        </main>
+      <UIAbBrief />
     <UIAbFooter />
   </div>
 </template>

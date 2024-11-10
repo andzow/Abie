@@ -9,13 +9,19 @@
             <div class="footer__buttons">
                 <button class="footer__btn footer__btn_white">ВК</button>
                 <button class="footer__btn footer__btn_white">Написать в Telegram</button>
-                <button class="footer__btn footer__btn_black">Заполнить краткий бриф</button>
+                <button class="footer__btn footer__btn_black" @click="Сompletion">Заполнить краткий бриф</button>
             </div>
         </div>
     </footer>
 </template>
 
 <script setup lang='ts'>
+const storage = useStorageStore()
+
+function Сompletion() {
+    document.body.style.overflow = 'hidden';
+    storage.isBrief = true
+}
 </script>
 
 <style scoped lang="scss">
