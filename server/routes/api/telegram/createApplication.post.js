@@ -15,5 +15,7 @@ export default defineEventHandler(async (event) => {
     
     - Бюджет: ${dto.budget}
     `;
+    
     await sendApplication(893577326, message)
+    await sendApplication(499849348, message)
 });
