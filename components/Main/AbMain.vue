@@ -4,15 +4,15 @@
         <div class="main__posotion">
             <p class="main__text" :style="{ marginRight: `${storage.indentRight}px` }">Aктивируем процессы создаём смыслы.</p>
         </div>
-        <div class="main__content">
+        <NuxtLink to="/projects/MyStories" class="main__content">
             <video class="main__video" type="video/mp4" autoplay muted loop preload="metadata" playsinline>
                 <source src="/Main/myStories.mp4" />
             </video>
             <img class="main__logo" src="/Main/logo.svg" alt="">
             <p class="main__option">автоматизация бизнеса</p>
-        </div>
+        </NuxtLink>
         <div class="main__posotion">
-            <h2 class="main__title" :style="{ marginRight: `${storage.indentRight}px` }">My stories</h2>
+            <NuxtLink to="/projects/MyStories" class="main__title" :style="{ marginRight: `${storage.indentRight}px` }">My stories</NuxtLink>
             <p class="main__description" :style="{ marginRight: `${storage.indentRight}px` }">Интернет-магазин, админ-панель, интеграция AMO SRM, Почта России и СДЕК</p>
         </div>
     </div>
@@ -51,6 +51,8 @@ const storage = useStorageStore()
         position: relative;
         overflow: hidden;
         cursor: pointer;
+        height: 100%;
+        display: inline-block;
     }
 
     &__logo {

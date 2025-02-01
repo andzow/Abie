@@ -23,6 +23,7 @@ const setPortfolioServiceFirst = [
     type: "branding",
   },
 ];
+
 const setPortfolioServiceSec = [
   {
     name: "Аналитика",
@@ -33,8 +34,8 @@ const setPortfolioServiceSec = [
     type: "printing",
   },
   {
-    name: "Маркетплейсы",
-    type: "marketplaces",
+    name: "Ритейл",
+    type: "riteil",
   },
   {
     name: "Сайт-визитка",

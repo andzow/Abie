@@ -2,14 +2,14 @@
     <section class="info" data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="-200">
         <div class="info__container">
             <div class="info__position">
-                <div class="info__image">
-                    <img class="info__img" src="/Main/medols.webp" alt="">
-                    <p class="info__option">сайт стоматологии на коде</p>
-                </div>
+                <NuxtLink class="info__image" to="/projects/Budni">
+                    <img class="info__img" src="/Main/coffee.webp" alt="">
+                    <p class="info__option">упаковка</p>
+                </NuxtLink>
             </div>
             <div class="info__content">
-                <h2 class="info__title" :style="{ marginRight: `${storage.indentRight}px` }">Медолс</h2>
-                <p class="info__description" :style="{ marginRight: `${storage.indentRight}px` }">Сайт стоматологии,<br> соблюдение норм МИНЗДРАВА</p>
+                <NuxtLink to="/projects/Budni" class="info__title" :style="{ marginRight: `${storage.indentRight}px` }">budni cofe</NuxtLink>
+                <p class="info__description" :style="{ marginRight: `${storage.indentRight}px` }">Упаковка, редизайн, серия</p>
             </div>
         </div>
     </section>
@@ -59,7 +59,6 @@ const storage = useStorageStore()
         position: absolute;
         top: 30px;
         right: 30px;
-        color: var(--white);
         text-align: right;
     }
 

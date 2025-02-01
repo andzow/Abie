@@ -15,7 +15,21 @@ function redirectLink() {
 <template>
   <div class="card">
     <div class="card__content">
-      <div class="card__image" @click="redirectLink">
+      <div class="card__position" v-if="item.videoSrc" @click="redirectLink">
+        <video
+          @click="redirectLink"
+          class="card__video"
+          type="video/mp4"
+          autoplay
+          muted
+          loop
+          preload="metadata"
+          playsinline
+        >
+        <source :src="item.videoSrc" />
+        </video>
+      </div>
+      <div v-if="item.imageSrc" class="card__image" @click="redirectLink">
         <img :src="item.imageSrc" />
       </div>
       <div class="card__menu">
@@ -36,6 +50,8 @@ function redirectLink() {
 
 <style scoped lang="scss">
 .card {
+  height: 100%;
+
   &__image {
     position: relative;
     display: flex;
@@ -43,6 +59,8 @@ function redirectLink() {
     overflow: hidden;
     cursor: pointer;
     img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       transition: all 0.6s ease;
     }
@@ -67,6 +85,26 @@ function redirectLink() {
     color: #000;
     text-align: right;
     max-width: 450px;
+  }
+  &__position {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 23px;
+    height: 100%;
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    transition: all 0.6s ease;
+  }
+
+  &__video:hover {
+    transform: scale(1.1);
   }
 }
 .enableLink {
@@ -93,7 +131,6 @@ function redirectLink() {
       overflow: hidden;
       cursor: pointer;
       img {
-        min-height: 400px;
         object-fit: cover;
         transition: all 0.6s ease;
       }

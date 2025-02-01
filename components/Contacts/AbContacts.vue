@@ -10,11 +10,11 @@
             <div class="contacts__position contacts__position_steps">
                 <div class="contacts__block">
                     <p class="contacts__description">Для связи по проектам:</p>
-                    <a class="contacts__name"><UIAbLink>почта</UIAbLink></a>
+                    <a href="mailto:abiedesign@yandex.ru" class="contacts__name"><UIAbLink>abiedesign@yandex.ru</UIAbLink></a>
                 </div>
                 <div class="contacts__block">
-                    <a class="contacts__name"><UIAbLink>telegram</UIAbLink></a>
-                    <a class="contacts__name"><UIAbLink>vk</UIAbLink></a>
+                    <a href="https://t.me/abiedesign" target="_blank" class="contacts__name"><UIAbLink>telegram</UIAbLink></a>
+                    <a href="https://vk.com/abie_design" target="_blank" class="contacts__name"><UIAbLink>vk</UIAbLink></a>
                 </div>
             </div>
         </div>

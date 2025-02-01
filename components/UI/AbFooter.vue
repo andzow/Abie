@@ -7,8 +7,8 @@
                 <h2 class="footer__title">абие</h2>
             </div>
             <div class="footer__buttons">
-                <button class="footer__btn footer__btn_white">ВК</button>
-                <button class="footer__btn footer__btn_white">Написать в Telegram</button>
+                <a href="https://vk.com/abie_design" target="_blank" class="footer__btn footer__btn_white">ВК</a>
+                <a href="https://t.me/abiedesign" target="_blank" class="footer__btn footer__btn_white">Написать в Telegram</a>
                 <button class="footer__btn footer__btn_black" @click="Сompletion">Заполнить краткий бриф</button>
             </div>
         </div>

@@ -3,21 +3,21 @@
         <div class="content__container">
             <div class="content__position">
                 <div class="content__item" data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="-500">
-                    <div class="content__image">
+                    <NuxtLink class="content__image" to="/projects/KolibriFlowers">
                         <img class="content__img" src="/Main/colibri.webp" alt="">
                         <p class="content__option">Tilda</p>
-                    </div>
-                    <h2 class="content__title">Kolibri flowers</h2>
+                    </NuxtLink>
+                    <NuxtLink class="content__title" to="/projects/kupala">Kolibri flowers</NuxtLink>
                     <p class="content__description">Tilda, интернет-магазин</p>
                 </div>
                 <div class="content__item" data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-offset="-200">
-                    <div class="content__video">
+                    <NuxtLink class="content__video" to="/projects/KolibriFlowers">
                         <video class="content__source" type="video/mp4" autoplay muted loop preload="metadata" playsinline>
                             <source src="/Main/kupala.mp4" />
                         </video>
                         <p class="content__option content__option_kupala">айдентика</p>
-                    </div>
-                    <h2 class="content__title">Купала</h2>
+                    </NuxtLink>
+                    <NuxtLink class="content__title" to="/projects/kupala">Купала</NuxtLink>
                     <p class="content__description content__description_kupala">Айдентика, гайдбук, промо ролик, полиграфия</p>
                 </div>
             </div>
